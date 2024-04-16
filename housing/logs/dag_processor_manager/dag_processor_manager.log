@@ -1,0 +1,908 @@
+[2024-04-16T21:29:10.272+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2024-04-16T21:29:10.273+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2024-04-16T21:29:10.274+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-04-16T21:29:10.275+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-04-16T21:29:10.286+0000] {manager.py:741} INFO - There are 48 files in /opt/airflow/dags
+[2024-04-16T21:29:10.416+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                            34  0.06s             0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                     35  0.04s             0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                                      0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                                             0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                                  0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py                                                          0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                                  0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                                          0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_objectstorage.py                                                            0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py                                                                   0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                                               0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                                             0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                                      0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                                  0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                                             0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                                   0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                                           0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                                           0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                                0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py                                                            0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                                   0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0
+================================================================================
+[2024-04-16T21:29:41.024+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  1.09s           2024-04-16T21:29:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                                             1           0  0.27s           2024-04-16T21:29:10
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                            89  0.01s             1           0  0.16s           2024-04-16T21:29:10
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                     90  0.00s             3           0  0.16s           2024-04-16T21:29:10
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.14s           2024-04-16T21:29:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                                  6           0  0.12s           2024-04-16T21:29:10
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 1           0  0.11s           2024-04-16T21:29:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                                             1           0  0.10s           2024-04-16T21:29:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.10s           2024-04-16T21:29:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                                           1           0  0.10s           2024-04-16T21:29:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_objectstorage.py                                                            1           0  0.10s           2024-04-16T21:29:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  0.10s           2024-04-16T21:29:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  0.10s           2024-04-16T21:29:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  0.09s           2024-04-16T21:29:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                                             1           0  0.09s           2024-04-16T21:29:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  3           0  0.09s           2024-04-16T21:29:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.09s           2024-04-16T21:29:10
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              1           0  0.09s           2024-04-16T21:29:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  0.09s           2024-04-16T21:29:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               1           0  0.09s           2024-04-16T21:29:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  0.09s           2024-04-16T21:29:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  0.09s           2024-04-16T21:29:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  0.09s           2024-04-16T21:29:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  0.09s           2024-04-16T21:29:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           1           0  0.09s           2024-04-16T21:29:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.09s           2024-04-16T21:29:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       1           0  0.09s           2024-04-16T21:29:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  0.08s           2024-04-16T21:29:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py                                                          1           0  0.08s           2024-04-16T21:29:10
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.08s           2024-04-16T21:29:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  0.08s           2024-04-16T21:29:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  0.08s           2024-04-16T21:29:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      1           0  0.08s           2024-04-16T21:29:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  0.08s           2024-04-16T21:29:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  0.08s           2024-04-16T21:29:10
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                                   1           0  0.08s           2024-04-16T21:29:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.08s           2024-04-16T21:29:10
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 1           0  0.08s           2024-04-16T21:29:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.08s           2024-04-16T21:29:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.08s           2024-04-16T21:29:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  0.08s           2024-04-16T21:29:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.08s           2024-04-16T21:29:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  2           0  0.08s           2024-04-16T21:29:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  0.07s           2024-04-16T21:29:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  0.07s           2024-04-16T21:29:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.04s           2024-04-16T21:29:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.04s           2024-04-16T21:29:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.04s           2024-04-16T21:29:12
+================================================================================
+[2024-04-16T21:30:11.482+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  0.28s           2024-04-16T21:29:43
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.28s           2024-04-16T21:29:43
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  0.25s           2024-04-16T21:29:45
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                    145  0.01s             3           0  0.24s           2024-04-16T21:29:41
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                                  6           0  0.23s           2024-04-16T21:29:41
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                           144  0.01s             1           0  0.22s           2024-04-16T21:29:41
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                                             1           0  0.21s           2024-04-16T21:29:41
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                                             1           0  0.20s           2024-04-16T21:29:43
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              1           0  0.19s           2024-04-16T21:29:43
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                                   1           0  0.19s           2024-04-16T21:29:43
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  3           0  0.18s           2024-04-16T21:29:44
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  0.17s           2024-04-16T21:29:42
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 1           0  0.17s           2024-04-16T21:29:42
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.17s           2024-04-16T21:29:43
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                                             1           0  0.16s           2024-04-16T21:29:42
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  0.16s           2024-04-16T21:29:41
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                                           1           0  0.16s           2024-04-16T21:29:44
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       1           0  0.16s           2024-04-16T21:29:44
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  0.16s           2024-04-16T21:29:42
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  0.16s           2024-04-16T21:29:43
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 1           0  0.16s           2024-04-16T21:29:44
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  0.16s           2024-04-16T21:29:42
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               1           0  0.15s           2024-04-16T21:29:44
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  0.15s           2024-04-16T21:29:44
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  0.15s           2024-04-16T21:29:42
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  0.15s           2024-04-16T21:29:42
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  0.15s           2024-04-16T21:29:44
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.15s           2024-04-16T21:29:41
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  0.15s           2024-04-16T21:29:42
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  2           0  0.15s           2024-04-16T21:29:43
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  0.15s           2024-04-16T21:29:43
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           1           0  0.15s           2024-04-16T21:29:44
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py                                                          1           0  0.15s           2024-04-16T21:29:41
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.15s           2024-04-16T21:29:42
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      1           0  0.15s           2024-04-16T21:29:41
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  0.14s           2024-04-16T21:29:44
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  0.14s           2024-04-16T21:29:44
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  0.14s           2024-04-16T21:29:44
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.14s           2024-04-16T21:29:41
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.14s           2024-04-16T21:29:43
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.14s           2024-04-16T21:29:42
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.14s           2024-04-16T21:29:45
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_objectstorage.py                                                            1           0  0.14s           2024-04-16T21:29:42
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.13s           2024-04-16T21:29:44
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  0.13s           2024-04-16T21:29:45
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.04s           2024-04-16T21:29:45
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.04s           2024-04-16T21:29:45
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.04s           2024-04-16T21:29:45
+================================================================================
+[2024-04-16T21:30:41.924+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                                             1           0  0.27s           2024-04-16T21:30:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  0.26s           2024-04-16T21:30:15
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                                  6           0  0.16s           2024-04-16T21:30:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  0.13s           2024-04-16T21:30:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                    200  0.00s             3           0  0.12s           2024-04-16T21:30:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  0.11s           2024-04-16T21:30:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 1           0  0.10s           2024-04-16T21:30:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.10s           2024-04-16T21:30:14
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                           199  0.01s             1           0  0.10s           2024-04-16T21:30:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.10s           2024-04-16T21:30:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.10s           2024-04-16T21:30:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  3           0  0.09s           2024-04-16T21:30:15
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       1           0  0.09s           2024-04-16T21:30:15
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                                           1           0  0.09s           2024-04-16T21:30:15
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              1           0  0.09s           2024-04-16T21:30:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                                             1           0  0.09s           2024-04-16T21:30:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                                   1           0  0.09s           2024-04-16T21:30:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  0.09s           2024-04-16T21:30:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.09s           2024-04-16T21:30:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  0.09s           2024-04-16T21:30:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  0.09s           2024-04-16T21:30:14
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  0.09s           2024-04-16T21:30:15
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               1           0  0.09s           2024-04-16T21:30:14
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_objectstorage.py                                                            1           0  0.09s           2024-04-16T21:30:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py                                                          1           0  0.08s           2024-04-16T21:30:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                                             1           0  0.08s           2024-04-16T21:30:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 1           0  0.08s           2024-04-16T21:30:14
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  0.08s           2024-04-16T21:30:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.08s           2024-04-16T21:30:15
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  2           0  0.08s           2024-04-16T21:30:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      1           0  0.08s           2024-04-16T21:30:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  0.08s           2024-04-16T21:30:15
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  0.08s           2024-04-16T21:30:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  0.08s           2024-04-16T21:30:14
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  0.08s           2024-04-16T21:30:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  0.08s           2024-04-16T21:30:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  0.08s           2024-04-16T21:30:15
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  0.08s           2024-04-16T21:30:15
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.08s           2024-04-16T21:30:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           1           0  0.07s           2024-04-16T21:30:15
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.07s           2024-04-16T21:30:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  0.07s           2024-04-16T21:30:15
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  0.07s           2024-04-16T21:30:15
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.07s           2024-04-16T21:30:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.07s           2024-04-16T21:30:15
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.04s           2024-04-16T21:30:15
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.03s           2024-04-16T21:30:15
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.03s           2024-04-16T21:30:15
+================================================================================
+[2024-04-16T21:31:12.689+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  0.27s           2024-04-16T21:30:46
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                                             1           0  0.22s           2024-04-16T21:30:42
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.14s           2024-04-16T21:30:46
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  0.13s           2024-04-16T21:30:46
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                                  6           0  0.12s           2024-04-16T21:30:42
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  0.11s           2024-04-16T21:30:43
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  0.11s           2024-04-16T21:30:42
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  0.11s           2024-04-16T21:30:44
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 1           0  0.11s           2024-04-16T21:30:43
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 1           0  0.10s           2024-04-16T21:30:44
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                                           1           0  0.10s           2024-04-16T21:30:45
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                    255  0.00s             3           0  0.10s           2024-04-16T21:30:42
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               1           0  0.10s           2024-04-16T21:30:44
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       1           0  0.10s           2024-04-16T21:30:45
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  3           0  0.10s           2024-04-16T21:30:45
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  0.10s           2024-04-16T21:30:46
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  0.10s           2024-04-16T21:30:44
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                                             1           0  0.09s           2024-04-16T21:30:43
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  0.09s           2024-04-16T21:30:43
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  0.09s           2024-04-16T21:30:45
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  0.09s           2024-04-16T21:30:46
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      1           0  0.09s           2024-04-16T21:30:42
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.09s           2024-04-16T21:30:42
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.09s           2024-04-16T21:30:44
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           1           0  0.09s           2024-04-16T21:30:45
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                                   1           0  0.09s           2024-04-16T21:30:44
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  0.09s           2024-04-16T21:30:45
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  0.09s           2024-04-16T21:30:43
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  0.09s           2024-04-16T21:30:43
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  0.08s           2024-04-16T21:30:44
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              1           0  0.08s           2024-04-16T21:30:44
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                                             1           0  0.08s           2024-04-16T21:30:44
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.08s           2024-04-16T21:30:42
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  0.08s           2024-04-16T21:30:46
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py                                                          1           0  0.08s           2024-04-16T21:30:42
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  0.08s           2024-04-16T21:30:43
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  0.08s           2024-04-16T21:30:42
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                           254  0.01s             1           0  0.08s           2024-04-16T21:30:41
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.08s           2024-04-16T21:30:42
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.08s           2024-04-16T21:30:43
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  2           0  0.08s           2024-04-16T21:30:44
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.08s           2024-04-16T21:30:44
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_objectstorage.py                                                            1           0  0.07s           2024-04-16T21:30:42
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.07s           2024-04-16T21:30:45
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.07s           2024-04-16T21:30:44
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.04s           2024-04-16T21:30:46
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.04s           2024-04-16T21:30:46
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.03s           2024-04-16T21:30:46
+================================================================================
+[2024-04-16T21:31:33.551+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2024-04-16T21:32:11.133+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2024-04-16T21:32:11.135+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2024-04-16T21:32:11.136+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-04-16T21:32:11.137+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-04-16T21:32:11.160+0000] {manager.py:741} INFO - There are 49 files in /opt/airflow/dags
+[2024-04-16T21:32:11.263+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/pipeline.py                                                                                                         34  0.05s             0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                            35  0.03s             0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                                           0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                                      0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                                             0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                                  0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py                                                          0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                                  0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                                          0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_objectstorage.py                                                            0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py                                                                   0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                                               0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                                             0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                                      0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                                  0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                                             0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                                   0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                                           0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                                           0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                                0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py                                                            0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                                   0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0
+================================================================================
+[2024-04-16T21:32:42.091+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/pipeline.py                                                                                                         91  0.01s             1           0  0.45s           2024-04-16T21:32:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  0.31s           2024-04-16T21:32:14
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                                             1           0  0.15s           2024-04-16T21:32:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                                  6           0  0.14s           2024-04-16T21:32:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.12s           2024-04-16T21:32:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 1           0  0.12s           2024-04-16T21:32:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                                           1           0  0.11s           2024-04-16T21:32:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  0.11s           2024-04-16T21:32:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.11s           2024-04-16T21:32:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              1           0  0.11s           2024-04-16T21:32:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  3           0  0.11s           2024-04-16T21:32:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  0.10s           2024-04-16T21:32:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                            92  0.00s             1           0  0.10s           2024-04-16T21:32:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      1           0  0.10s           2024-04-16T21:32:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                                             1           0  0.10s           2024-04-16T21:32:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  0.10s           2024-04-16T21:32:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.09s           2024-04-16T21:32:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  0.09s           2024-04-16T21:32:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  0.09s           2024-04-16T21:32:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.09s           2024-04-16T21:32:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  0.09s           2024-04-16T21:32:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  0.09s           2024-04-16T21:32:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py                                                          1           0  0.09s           2024-04-16T21:32:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  0.09s           2024-04-16T21:32:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.09s           2024-04-16T21:32:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  2           0  0.09s           2024-04-16T21:32:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       1           0  0.09s           2024-04-16T21:32:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  0.09s           2024-04-16T21:32:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                                   1           0  0.09s           2024-04-16T21:32:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.09s           2024-04-16T21:32:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                                             1           0  0.08s           2024-04-16T21:32:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  0.08s           2024-04-16T21:32:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  0.08s           2024-04-16T21:32:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  0.08s           2024-04-16T21:32:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  0.08s           2024-04-16T21:32:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.08s           2024-04-16T21:32:11
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               1           0  0.08s           2024-04-16T21:32:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.08s           2024-04-16T21:32:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_objectstorage.py                                                            1           0  0.08s           2024-04-16T21:32:12
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  0.08s           2024-04-16T21:32:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 1           0  0.07s           2024-04-16T21:32:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  0.07s           2024-04-16T21:32:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  0.07s           2024-04-16T21:32:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           1           0  0.07s           2024-04-16T21:32:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  0.07s           2024-04-16T21:32:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.07s           2024-04-16T21:32:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.04s           2024-04-16T21:32:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.04s           2024-04-16T21:32:13
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.03s           2024-04-16T21:32:13
+================================================================================
+[2024-04-16T21:33:01.001+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2024-04-16T21:33:49.125+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2024-04-16T21:33:49.126+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2024-04-16T21:33:49.127+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-04-16T21:33:49.128+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-04-16T21:33:49.150+0000] {manager.py:741} INFO - There are 49 files in /opt/airflow/dags
+[2024-04-16T21:33:49.272+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/pipeline.py                                                                                                         34  0.07s             0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                            35  0.03s             0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                                           0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                                      0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                                             0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                                  0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py                                                          0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                                  0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                                          0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_objectstorage.py                                                            0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py                                                                   0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                                               0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                                             0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                                      0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                                  0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                                             0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                                   0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                                           0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                                           0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                                0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py                                                            0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                                   0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0
+================================================================================
+[2024-04-16T21:34:19.385+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/pipeline.py                                                                                                                               1           0  1.39s           2024-04-16T21:33:50
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  0.28s           2024-04-16T21:33:52
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                                             1           0  0.26s           2024-04-16T21:33:49
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                                  6           0  0.11s           2024-04-16T21:33:49
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  0.10s           2024-04-16T21:33:49
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                            91  0.00s             1           0  0.10s           2024-04-16T21:33:49
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 1           0  0.10s           2024-04-16T21:33:50
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                                           1           0  0.10s           2024-04-16T21:33:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  0.10s           2024-04-16T21:33:52
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.09s           2024-04-16T21:33:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      1           0  0.09s           2024-04-16T21:33:50
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                                             1           0  0.09s           2024-04-16T21:33:50
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  3           0  0.09s           2024-04-16T21:33:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.09s           2024-04-16T21:33:52
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                                             1           0  0.09s           2024-04-16T21:33:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  0.09s           2024-04-16T21:33:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  0.09s           2024-04-16T21:33:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               1           0  0.09s           2024-04-16T21:33:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  0.09s           2024-04-16T21:33:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              1           0  0.09s           2024-04-16T21:33:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       1           0  0.08s           2024-04-16T21:33:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  0.08s           2024-04-16T21:33:50
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  0.08s           2024-04-16T21:33:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  0.08s           2024-04-16T21:33:50
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.08s           2024-04-16T21:33:50
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py                                                          1           0  0.08s           2024-04-16T21:33:50
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  0.08s           2024-04-16T21:33:50
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  0.08s           2024-04-16T21:33:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.08s           2024-04-16T21:33:49
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           1           0  0.08s           2024-04-16T21:33:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  2           0  0.08s           2024-04-16T21:33:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  0.08s           2024-04-16T21:33:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_objectstorage.py                                                            1           0  0.08s           2024-04-16T21:33:50
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                                   1           0  0.08s           2024-04-16T21:33:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  0.08s           2024-04-16T21:33:49
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  0.08s           2024-04-16T21:33:50
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  0.08s           2024-04-16T21:33:50
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  0.08s           2024-04-16T21:33:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.08s           2024-04-16T21:33:50
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  0.08s           2024-04-16T21:33:50
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.08s           2024-04-16T21:33:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 1           0  0.07s           2024-04-16T21:33:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  0.07s           2024-04-16T21:33:52
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.07s           2024-04-16T21:33:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.07s           2024-04-16T21:33:50
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.07s           2024-04-16T21:33:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.04s           2024-04-16T21:33:52
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.03s           2024-04-16T21:33:52
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.03s           2024-04-16T21:33:52
+================================================================================
+[2024-04-16T21:34:49.844+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/pipeline.py                                                                                                                               1           0  0.30s           2024-04-16T21:34:20
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  0.29s           2024-04-16T21:34:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               1           0  0.25s           2024-04-16T21:34:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  0.25s           2024-04-16T21:34:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  3           0  0.22s           2024-04-16T21:34:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                                  6           0  0.22s           2024-04-16T21:34:21
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              1           0  0.22s           2024-04-16T21:34:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  2           0  0.22s           2024-04-16T21:34:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                                             1           0  0.21s           2024-04-16T21:34:20
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                                   1           0  0.21s           2024-04-16T21:34:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.21s           2024-04-16T21:34:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                                           1           0  0.20s           2024-04-16T21:34:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.19s           2024-04-16T21:34:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  0.19s           2024-04-16T21:34:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  0.19s           2024-04-16T21:34:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 1           0  0.18s           2024-04-16T21:34:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       1           0  0.18s           2024-04-16T21:34:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  0.18s           2024-04-16T21:34:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 1           0  0.17s           2024-04-16T21:34:21
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.17s           2024-04-16T21:34:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  0.17s           2024-04-16T21:34:21
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  0.17s           2024-04-16T21:34:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  0.17s           2024-04-16T21:34:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           1           0  0.17s           2024-04-16T21:34:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  0.17s           2024-04-16T21:34:21
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  0.17s           2024-04-16T21:34:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                    149  0.00s             3           0  0.16s           2024-04-16T21:34:19
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  0.16s           2024-04-16T21:34:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  0.16s           2024-04-16T21:34:21
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.16s           2024-04-16T21:34:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                                             1           0  0.16s           2024-04-16T21:34:21
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  0.16s           2024-04-16T21:34:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  0.16s           2024-04-16T21:34:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      1           0  0.15s           2024-04-16T21:34:21
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.15s           2024-04-16T21:34:21
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                                             1           0  0.15s           2024-04-16T21:34:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py                                                          1           0  0.15s           2024-04-16T21:34:21
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.14s           2024-04-16T21:34:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  0.14s           2024-04-16T21:34:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  0.14s           2024-04-16T21:34:21
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.14s           2024-04-16T21:34:19
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.14s           2024-04-16T21:34:21
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  0.14s           2024-04-16T21:34:21
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                           148  0.01s             1           0  0.14s           2024-04-16T21:34:19
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_objectstorage.py                                                            1           0  0.14s           2024-04-16T21:34:21
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.14s           2024-04-16T21:34:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.04s           2024-04-16T21:34:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.04s           2024-04-16T21:34:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.04s           2024-04-16T21:34:24
+================================================================================
+[2024-04-16T21:35:19.891+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/pipeline.py                                                                                                                               1           0  0.39s           2024-04-16T21:34:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                                             1           0  0.29s           2024-04-16T21:34:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  0.28s           2024-04-16T21:34:56
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                                  6           0  0.13s           2024-04-16T21:34:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  0.13s           2024-04-16T21:34:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  0.12s           2024-04-16T21:34:52
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                                           1           0  0.12s           2024-04-16T21:34:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  0.11s           2024-04-16T21:34:49
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       1           0  0.11s           2024-04-16T21:34:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.11s           2024-04-16T21:34:53
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 1           0  0.11s           2024-04-16T21:34:52
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  0.11s           2024-04-16T21:34:53
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  0.10s           2024-04-16T21:34:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  3           0  0.10s           2024-04-16T21:34:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  0.10s           2024-04-16T21:34:53
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                                             1           0  0.10s           2024-04-16T21:34:52
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  0.10s           2024-04-16T21:34:52
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              1           0  0.09s           2024-04-16T21:34:53
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 1           0  0.09s           2024-04-16T21:34:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  0.09s           2024-04-16T21:34:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                                   1           0  0.09s           2024-04-16T21:34:53
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               1           0  0.09s           2024-04-16T21:34:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.09s           2024-04-16T21:34:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                                             1           0  0.09s           2024-04-16T21:34:52
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  0.09s           2024-04-16T21:34:52
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  1           0  0.09s           2024-04-16T21:34:49
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  0.09s           2024-04-16T21:34:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  0.09s           2024-04-16T21:34:52
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  0.09s           2024-04-16T21:34:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.09s           2024-04-16T21:34:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.09s           2024-04-16T21:34:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      1           0  0.09s           2024-04-16T21:34:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  0.09s           2024-04-16T21:34:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  2           0  0.09s           2024-04-16T21:34:53
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  0.09s           2024-04-16T21:34:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  0.09s           2024-04-16T21:34:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.09s           2024-04-16T21:34:52
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py                                                          1           0  0.09s           2024-04-16T21:34:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  0.08s           2024-04-16T21:34:52
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           1           0  0.08s           2024-04-16T21:34:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.08s           2024-04-16T21:34:50
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.08s           2024-04-16T21:34:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_objectstorage.py                                                            1           0  0.08s           2024-04-16T21:34:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.08s           2024-04-16T21:34:53
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  0.07s           2024-04-16T21:34:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.07s           2024-04-16T21:34:52
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.04s           2024-04-16T21:34:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.04s           2024-04-16T21:34:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.03s           2024-04-16T21:34:54
+================================================================================
+[2024-04-16T21:35:50.007+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/pipeline.py                                                                                                                               1           0  0.30s           2024-04-16T21:35:21
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  0.28s           2024-04-16T21:35:27
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                                             1           0  0.21s           2024-04-16T21:35:21
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  0.12s           2024-04-16T21:35:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                                  6           0  0.12s           2024-04-16T21:35:21
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 1           0  0.11s           2024-04-16T21:35:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  0.11s           2024-04-16T21:35:20
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                                             1           0  0.11s           2024-04-16T21:35:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.11s           2024-04-16T21:35:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  0.11s           2024-04-16T21:35:21
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                                           1           0  0.10s           2024-04-16T21:35:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       1           0  0.10s           2024-04-16T21:35:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  0.10s           2024-04-16T21:35:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  3           0  0.10s           2024-04-16T21:35:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.09s           2024-04-16T21:35:20
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              1           0  0.09s           2024-04-16T21:35:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  0.09s           2024-04-16T21:35:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  0.09s           2024-04-16T21:35:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                                   1           0  0.09s           2024-04-16T21:35:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                                             1           0  0.09s           2024-04-16T21:35:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  0.09s           2024-04-16T21:35:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 1           0  0.09s           2024-04-16T21:35:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.09s           2024-04-16T21:35:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  1           0  0.09s           2024-04-16T21:35:20
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               1           0  0.09s           2024-04-16T21:35:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  0.09s           2024-04-16T21:35:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  0.09s           2024-04-16T21:35:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  2           0  0.09s           2024-04-16T21:35:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  0.09s           2024-04-16T21:35:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  0.09s           2024-04-16T21:35:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.08s           2024-04-16T21:35:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  0.08s           2024-04-16T21:35:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.08s           2024-04-16T21:35:21
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.08s           2024-04-16T21:35:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           1           0  0.08s           2024-04-16T21:35:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  0.08s           2024-04-16T21:35:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.08s           2024-04-16T21:35:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  0.08s           2024-04-16T21:35:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  0.08s           2024-04-16T21:35:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      1           0  0.08s           2024-04-16T21:35:21
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py                                                          1           0  0.08s           2024-04-16T21:35:21
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  0.08s           2024-04-16T21:35:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  0.08s           2024-04-16T21:35:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.08s           2024-04-16T21:35:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_objectstorage.py                                                            1           0  0.07s           2024-04-16T21:35:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.07s           2024-04-16T21:35:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.04s           2024-04-16T21:35:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.04s           2024-04-16T21:35:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.04s           2024-04-16T21:35:24
+================================================================================
+[2024-04-16T21:36:20.094+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/pipeline.py                                                                                                                               1           0  0.31s           2024-04-16T21:35:52
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  0.26s           2024-04-16T21:35:57
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                                             1           0  0.23s           2024-04-16T21:35:52
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                                  6           0  0.12s           2024-04-16T21:35:52
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  0.11s           2024-04-16T21:35:53
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 1           0  0.11s           2024-04-16T21:35:53
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  0.11s           2024-04-16T21:35:52
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  0.10s           2024-04-16T21:35:50
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       1           0  0.10s           2024-04-16T21:35:55
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      1           0  0.10s           2024-04-16T21:35:53
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  0.10s           2024-04-16T21:35:53
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  3           0  0.10s           2024-04-16T21:35:55
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                                           1           0  0.10s           2024-04-16T21:35:55
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.10s           2024-04-16T21:35:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.09s           2024-04-16T21:35:55
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              1           0  0.09s           2024-04-16T21:35:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                                             1           0  0.09s           2024-04-16T21:35:53
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 1           0  0.09s           2024-04-16T21:35:55
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                                   1           0  0.09s           2024-04-16T21:35:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                                             1           0  0.09s           2024-04-16T21:35:53
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  0.09s           2024-04-16T21:35:53
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               1           0  0.09s           2024-04-16T21:35:55
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  0.09s           2024-04-16T21:35:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  0.09s           2024-04-16T21:35:55
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  0.09s           2024-04-16T21:35:55
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.09s           2024-04-16T21:35:53
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           1           0  0.09s           2024-04-16T21:35:55
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  0.09s           2024-04-16T21:35:55
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py                                                          1           0  0.09s           2024-04-16T21:35:52
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  0.09s           2024-04-16T21:35:53
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  0.08s           2024-04-16T21:35:55
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  0.08s           2024-04-16T21:35:53
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.08s           2024-04-16T21:35:53
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  0.08s           2024-04-16T21:35:55
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  0.08s           2024-04-16T21:35:55
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  0.08s           2024-04-16T21:35:55
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  1           0  0.08s           2024-04-16T21:35:50
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  2           0  0.08s           2024-04-16T21:35:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.08s           2024-04-16T21:35:50
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  0.08s           2024-04-16T21:35:53
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.08s           2024-04-16T21:35:52
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  0.08s           2024-04-16T21:35:53
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.08s           2024-04-16T21:35:53
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_objectstorage.py                                                            1           0  0.08s           2024-04-16T21:35:53
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.07s           2024-04-16T21:35:55
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.07s           2024-04-16T21:35:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.04s           2024-04-16T21:35:55
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.04s           2024-04-16T21:35:55
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.04s           2024-04-16T21:35:55
+================================================================================
+[2024-04-16T21:36:50.383+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/pipeline.py                                                                                                                               1           0  0.32s           2024-04-16T21:36:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  0.26s           2024-04-16T21:36:28
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                                             1           0  0.17s           2024-04-16T21:36:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                                  6           0  0.13s           2024-04-16T21:36:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                                             1           0  0.12s           2024-04-16T21:36:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       1           0  0.12s           2024-04-16T21:36:25
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 1           0  0.11s           2024-04-16T21:36:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  0.11s           2024-04-16T21:36:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  0.11s           2024-04-16T21:36:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  0.10s           2024-04-16T21:36:25
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                                           1           0  0.10s           2024-04-16T21:36:25
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  0.10s           2024-04-16T21:36:20
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  3           0  0.10s           2024-04-16T21:36:25
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.10s           2024-04-16T21:36:25
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  0.10s           2024-04-16T21:36:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 1           0  0.10s           2024-04-16T21:36:25
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               1           0  0.09s           2024-04-16T21:36:25
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              1           0  0.09s           2024-04-16T21:36:25
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  0.09s           2024-04-16T21:36:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  0.09s           2024-04-16T21:36:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                                   1           0  0.09s           2024-04-16T21:36:25
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  0.09s           2024-04-16T21:36:26
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           1           0  0.09s           2024-04-16T21:36:25
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.09s           2024-04-16T21:36:26
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.09s           2024-04-16T21:36:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                                             1           0  0.09s           2024-04-16T21:36:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  0.09s           2024-04-16T21:36:26
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  0.08s           2024-04-16T21:36:25
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  0.08s           2024-04-16T21:36:26
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  0.08s           2024-04-16T21:36:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  0.08s           2024-04-16T21:36:25
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  0.08s           2024-04-16T21:36:25
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.08s           2024-04-16T21:36:21
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  1           0  0.08s           2024-04-16T21:36:20
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  0.08s           2024-04-16T21:36:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      1           0  0.08s           2024-04-16T21:36:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  2           0  0.08s           2024-04-16T21:36:25
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py                                                          1           0  0.08s           2024-04-16T21:36:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  0.08s           2024-04-16T21:36:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.08s           2024-04-16T21:36:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.08s           2024-04-16T21:36:25
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.07s           2024-04-16T21:36:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.07s           2024-04-16T21:36:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  0.07s           2024-04-16T21:36:26
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_objectstorage.py                                                            1           0  0.07s           2024-04-16T21:36:23
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.07s           2024-04-16T21:36:25
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.04s           2024-04-16T21:36:26
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.03s           2024-04-16T21:36:26
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.03s           2024-04-16T21:36:26
+================================================================================
+[2024-04-16T21:37:21.023+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/pipeline.py                                                                                                                               1           0  0.44s           2024-04-16T21:36:53
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  0.29s           2024-04-16T21:36:59
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                                             1           0  0.15s           2024-04-16T21:36:53
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py                                                          1           0  0.14s           2024-04-16T21:36:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.14s           2024-04-16T21:36:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                                  6           0  0.13s           2024-04-16T21:36:53
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  0.13s           2024-04-16T21:36:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  0.12s           2024-04-16T21:36:53
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                                             1           0  0.12s           2024-04-16T21:36:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 1           0  0.12s           2024-04-16T21:36:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  3           0  0.11s           2024-04-16T21:36:56
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                                           1           0  0.11s           2024-04-16T21:36:56
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  0.10s           2024-04-16T21:36:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  0.10s           2024-04-16T21:36:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.10s           2024-04-16T21:36:56
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.10s           2024-04-16T21:36:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       1           0  0.10s           2024-04-16T21:36:56
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 1           0  0.09s           2024-04-16T21:36:56
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  0.09s           2024-04-16T21:36:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              1           0  0.09s           2024-04-16T21:36:55
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               1           0  0.09s           2024-04-16T21:36:56
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                                   1           0  0.09s           2024-04-16T21:36:55
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  0.09s           2024-04-16T21:36:56
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.09s           2024-04-16T21:36:56
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  0.09s           2024-04-16T21:36:56
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      1           0  0.09s           2024-04-16T21:36:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  0.09s           2024-04-16T21:36:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_objectstorage.py                                                            1           0  0.09s           2024-04-16T21:36:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  0.09s           2024-04-16T21:36:56
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  0.09s           2024-04-16T21:36:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  0.09s           2024-04-16T21:36:56
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  1           0  0.09s           2024-04-16T21:36:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  0.08s           2024-04-16T21:36:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  0.08s           2024-04-16T21:36:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  0.08s           2024-04-16T21:36:56
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  0.08s           2024-04-16T21:36:56
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           1           0  0.08s           2024-04-16T21:36:56
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                                             1           0  0.08s           2024-04-16T21:36:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  0.08s           2024-04-16T21:36:56
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.08s           2024-04-16T21:36:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.08s           2024-04-16T21:36:51
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  2           0  0.08s           2024-04-16T21:36:55
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.08s           2024-04-16T21:36:56
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.08s           2024-04-16T21:36:56
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  0.07s           2024-04-16T21:36:56
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.07s           2024-04-16T21:36:54
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.04s           2024-04-16T21:36:56
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.03s           2024-04-16T21:36:56
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.03s           2024-04-16T21:36:56
+================================================================================
+[2024-04-16T21:37:51.568+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/pipeline.py                                                                                                                               1           0  0.44s           2024-04-16T21:37:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  0.27s           2024-04-16T21:37:29
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py                                                             1           0  0.17s           2024-04-16T21:37:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py                                                                  6           0  0.13s           2024-04-16T21:37:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  0.12s           2024-04-16T21:37:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  0.11s           2024-04-16T21:37:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 1           0  0.11s           2024-04-16T21:37:25
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  0.10s           2024-04-16T21:37:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  3           0  0.10s           2024-04-16T21:37:27
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              1           0  0.10s           2024-04-16T21:37:26
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.10s           2024-04-16T21:37:26
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_complex.py                                                                   1           0  0.10s           2024-04-16T21:37:26
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_bash_operator.py                                                             1           0  0.10s           2024-04-16T21:37:25
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       1           0  0.10s           2024-04-16T21:37:26
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py                                                           1           0  0.10s           2024-04-16T21:37:27
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  0.09s           2024-04-16T21:37:25
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.09s           2024-04-16T21:37:27
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  0.09s           2024-04-16T21:37:25
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  0.09s           2024-04-16T21:37:26
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  0.09s           2024-04-16T21:37:27
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  0.09s           2024-04-16T21:37:26
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.09s           2024-04-16T21:37:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 1           0  0.09s           2024-04-16T21:37:26
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py                                                          1           0  0.09s           2024-04-16T21:37:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               1           0  0.09s           2024-04-16T21:37:26
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  0.09s           2024-04-16T21:37:25
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      1           0  0.08s           2024-04-16T21:37:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  0.08s           2024-04-16T21:37:27
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  0.08s           2024-04-16T21:37:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  0.08s           2024-04-16T21:37:25
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_labels.py                                                             1           0  0.08s           2024-04-16T21:37:25
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  0.08s           2024-04-16T21:37:26
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           1           0  0.08s           2024-04-16T21:37:26
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.08s           2024-04-16T21:37:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.08s           2024-04-16T21:37:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  0.08s           2024-04-16T21:37:27
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  0.08s           2024-04-16T21:37:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  1           0  0.08s           2024-04-16T21:37:22
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  0.08s           2024-04-16T21:37:27
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  2           0  0.08s           2024-04-16T21:37:26
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  0.08s           2024-04-16T21:37:27
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_objectstorage.py                                                            1           0  0.08s           2024-04-16T21:37:24
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.07s           2024-04-16T21:37:25
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.07s           2024-04-16T21:37:27
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.07s           2024-04-16T21:37:25
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.07s           2024-04-16T21:37:26
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.04s           2024-04-16T21:37:27
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.04s           2024-04-16T21:37:27
+/home/airflow/.local/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.03s           2024-04-16T21:37:27
+================================================================================
