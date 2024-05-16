@@ -5,4 +5,4 @@ FROM apache/airflow:2.8.4-python3.10
 USER airflow
 
 # Install the required Python packages
-RUN pip install homeharvest
+RUN pip install homeharvest scikit-learn pandas xgboost

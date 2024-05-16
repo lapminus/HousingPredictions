@@ -2,7 +2,9 @@ from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime
 from homeharvest import scrape_property
-
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_squared_error
 
 def acquire_data(location, listing_type, past_days, mls_only):
     properties = scrape_property(
@@ -52,10 +54,48 @@ def store_data(**kwargs):
     cleaned_properties.to_csv(filename, index=False)
     print(f"Data stored in {filename}")
 
+def analyze_data(**kwargs):
+    ti = kwargs['ti']
+    cleaned_properties = ti.xcom_pull(task_ids='clean_data', key='cleaned_properties')
 
-def analyze_data():
-    print("Analyzing data..its ganna be mcgormiccck")
-    return "brrrrr"
+    # Select relevant features for training
+    features = ['beds', 'full_baths', 'half_baths', 'sqft', 'year_built', 'lot_sqft',
+                'price_per_sqft', 'stories', 'hoa_fee', 'parking_garage', 'list_price',
+                'assessed_value', 'estimated_value']
+
+    # Drop rows with missing target values (sold_price)
+    cleaned_properties.dropna(subset=['sold_price'], inplace=True)
+
+    # Prepare data for modeling
+    X = cleaned_properties[features]
+    y = cleaned_properties['sold_price']
+
+    # Split data into train and test sets
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+    # Define and train the model (Random Forest Regressor)
+    model = RandomForestRegressor(n_estimators=100, random_state=42)
+    model.fit(X_train, y_train)
+
+    # Evaluate the model
+    y_pred = model.predict(X_test)
+    mse = mean_squared_error(y_test, y_pred)
+    rmse = mse ** 0.5
+    print(f"Root Mean Squared Error (RMSE): {rmse}")
+
+    # Store or output model evaluation results
+    evaluation_results = {
+        'RMSE': rmse,
+        'model_name': 'RandomForestRegressor',
+        'model_params': {
+            'n_estimators': 100,
+            'random_state': 42
+        }
+    }
+    # You can push evaluation results to XCom for monitoring or further use
+    ti.xcom_push(key='evaluation_results', value=evaluation_results)
+
+    return evaluation_results
 
 
 default_args = {
