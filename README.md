@@ -38,4 +38,5 @@ housing
 ```
 
 # Visualization
+To view the visualization, one requires a tableau public account.
 https://public.tableau.com/authoring/LosAngelesCountyHousingVisualization/AvgPricePerHouse#3
