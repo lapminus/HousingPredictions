@@ -5,6 +5,7 @@ from homeharvest import scrape_property
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
+import pandas as pd
 
 def acquire_data(location, listing_type, past_days, mls_only):
     properties = scrape_property(
@@ -57,6 +58,44 @@ def store_data(**kwargs):
 def analyze_data(**kwargs):
     ti = kwargs['ti']
     cleaned_properties = ti.xcom_pull(task_ids='clean_data', key='cleaned_properties')
+    filename = kwargs['filename']
+    cleaned_properties_df = pd.read_csv(filename)
+
+    if cleaned_properties_df.empty:
+        print("No data to analyze")
+        return
+    
+    # Display statistical summaries of the sold prices
+    sold_prices = cleaned_properties_df['sold_price']
+
+    # Ensure the 'sold_price' column is treated as numeric
+    sold_prices = pd.to_numeric(sold_prices, errors='coerce')
+
+    # Get descriptive statistics
+    summary_stats = sold_prices.describe()
+
+    # Calculate additional statistics
+    min_price = sold_prices.min()
+    max_price = sold_prices.max()
+    median_price = sold_prices.median()
+    mean_price = sold_prices.mean()
+    std_dev_price = sold_prices.std()
+
+    summary = {
+        'summary_stats': summary_stats,
+        'min_price': min_price,
+        'max_price': max_price,
+        'median_price': median_price,
+        'mean_price': mean_price,
+    }
+
+    # Print the statistics
+    print(f"Summary Statistics:\n{summary_stats}\n")
+    print(f"Min Price: {min_price}")
+    print(f"Max Price: {max_price}")
+    print(f"Median Price: {median_price}")
+    print(f"Mean Price: {mean_price}")
+    print(f"Standard Deviation: {std_dev_price}")
 
     # Select relevant features for training
     features = ['beds', 'full_baths', 'half_baths', 'sqft', 'year_built', 'lot_sqft',
@@ -140,6 +179,7 @@ analyze_data_task = PythonOperator(
     task_id='analyze_data',
     python_callable=analyze_data,
     provide_context=True,
+    op_kwargs={'filename': '/opt/airflow/data/cleaned_properties.csv'},
     dag=dag,
 )
 

@@ -1,0 +1,231 @@
+[2024-05-16T06:55:14.153+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_pipeline.acquire_data manual__2024-05-16T06:55:10.764341+00:00 [queued]>
+[2024-05-16T06:55:14.167+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_pipeline.acquire_data manual__2024-05-16T06:55:10.764341+00:00 [queued]>
+[2024-05-16T06:55:14.168+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-05-16T06:55:14.190+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): acquire_data> on 2024-05-16 06:55:10.764341+00:00
+[2024-05-16T06:55:14.200+0000] {standard_task_runner.py:60} INFO - Started process 93 to run task
+[2024-05-16T06:55:14.203+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'data_pipeline', 'acquire_data', 'manual__2024-05-16T06:55:10.764341+00:00', '--job-id', '47', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpzh51hc5j']
+[2024-05-16T06:55:14.205+0000] {standard_task_runner.py:88} INFO - Job 47: Subtask acquire_data
+[2024-05-16T06:55:14.276+0000] {task_command.py:423} INFO - Running <TaskInstance: data_pipeline.acquire_data manual__2024-05-16T06:55:10.764341+00:00 [running]> on host 7f10f1c98368
+[2024-05-16T06:55:14.391+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='data_pipeline' AIRFLOW_CTX_TASK_ID='acquire_data' AIRFLOW_CTX_EXECUTION_DATE='2024-05-16T06:55:10.764341+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-16T06:55:10.764341+00:00'
+[2024-05-16T06:55:18.703+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:18.784+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:18.791+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:18.794+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:18.808+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:18.847+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:18.849+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:18.848+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:18.903+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:18.904+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:21.109+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 8
+[2024-05-16T06:55:21.470+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:21.485+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:21.492+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:21.505+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:21.519+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:21.533+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:21.535+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:21.545+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:21.540+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:21.529+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 9
+[2024-05-16T06:55:21.568+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 7
+[2024-05-16T06:55:21.836+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:21.842+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:22.250+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 9
+[2024-05-16T06:55:22.262+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 9
+[2024-05-16T06:55:22.271+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 7
+[2024-05-16T06:55:22.310+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:22.337+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 9
+[2024-05-16T06:55:22.392+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 9
+[2024-05-16T06:55:22.404+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:22.399+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:22.426+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 8
+[2024-05-16T06:55:22.434+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 6
+[2024-05-16T06:55:22.658+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:22.665+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:22.686+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 9
+[2024-05-16T06:55:22.702+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 6
+[2024-05-16T06:55:22.782+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:22.784+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:22.813+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:22.808+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:22.829+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:23.053+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:23.093+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 9
+[2024-05-16T06:55:23.116+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:23.118+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:23.112+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:23.163+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 9
+[2024-05-16T06:55:23.177+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:23.172+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:23.180+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:23.600+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 9
+[2024-05-16T06:55:23.638+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:23.642+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:23.649+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:23.653+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:23.657+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 9
+[2024-05-16T06:55:23.660+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 8
+[2024-05-16T06:55:23.637+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:23.701+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 6
+[2024-05-16T06:55:23.663+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 8
+[2024-05-16T06:55:24.001+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:24.028+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 9
+[2024-05-16T06:55:24.299+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:24.358+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:24.367+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:24.371+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:24.376+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:24.383+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:24.391+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 8
+[2024-05-16T06:55:24.395+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 8
+[2024-05-16T06:55:24.626+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:24.631+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:24.646+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 8
+[2024-05-16T06:55:24.971+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:25.006+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:25.012+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:25.045+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 8
+[2024-05-16T06:55:24.985+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:25.067+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 7
+[2024-05-16T06:55:25.379+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:25.432+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 8
+[2024-05-16T06:55:25.427+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 7
+[2024-05-16T06:55:25.465+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 7
+[2024-05-16T06:55:25.526+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:25.524+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:25.533+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:25.537+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 9
+[2024-05-16T06:55:25.538+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 9
+[2024-05-16T06:55:25.599+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 9
+[2024-05-16T06:55:25.617+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 8
+[2024-05-16T06:55:25.643+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 6
+[2024-05-16T06:55:25.652+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 6
+[2024-05-16T06:55:25.799+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 2
+[2024-05-16T06:55:29.704+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:29.719+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 9
+[2024-05-16T06:55:29.738+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:29.744+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:29.746+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:29.764+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:29.779+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:29.780+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:29.788+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:29.797+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 9
+[2024-05-16T06:55:29.825+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:29.839+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:29.883+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:29.887+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 9
+[2024-05-16T06:55:29.900+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:29.913+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:29.908+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:29.925+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:29.936+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:29.939+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 9
+[2024-05-16T06:55:30.037+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:30.041+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:30.040+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:30.049+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:30.052+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 9
+[2024-05-16T06:55:30.059+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:30.061+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:30.070+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 9
+[2024-05-16T06:55:30.072+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 9
+[2024-05-16T06:55:30.085+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:30.129+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:30.134+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 9
+[2024-05-16T06:55:30.220+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:30.483+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:30.489+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:30.518+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 9
+[2024-05-16T06:55:30.774+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 9
+[2024-05-16T06:55:30.816+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:30.818+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:30.821+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:30.823+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:30.825+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 9
+[2024-05-16T06:55:30.900+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:30.903+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:30.908+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:30.912+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:30.924+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 8
+[2024-05-16T06:55:30.995+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 8
+[2024-05-16T06:55:31.022+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.026+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 9
+[2024-05-16T06:55:31.034+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.038+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.054+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.059+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.063+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.066+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.072+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.074+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.078+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.086+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.088+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.091+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.102+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.106+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.110+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.115+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.117+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.132+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.119+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.123+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.136+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.128+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.142+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.148+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.153+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.157+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.164+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.165+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.168+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.170+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.180+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.185+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.187+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.193+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.196+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.199+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.201+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.210+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.207+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.211+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.215+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.218+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.221+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.224+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.226+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.229+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.232+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.235+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.238+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.240+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.242+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.247+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.250+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.255+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.258+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.261+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.263+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.265+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.446+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:31.455+0000] {connectionpool.py:331} WARNING - Connection pool is full, discarding connection: graph.realtor.com. Connection pool size: 10
+[2024-05-16T06:55:42.376+0000] {python.py:202} INFO - Done. Returned value was:                                            property_url  ...                                         alt_photos
+0     https://www.realtor.com/realestateandhomes-det...  ...  http://ap.rdcpix.com/5323b3f737dcfe579c705b769...
+1     https://www.realtor.com/realestateandhomes-det...  ...  http://ap.rdcpix.com/67ecd2a7dd7067291ae8a8793...
+2     https://www.realtor.com/realestateandhomes-det...  ...  http://ap.rdcpix.com/ff34ede5c54f72f874af503d3...
+3     https://www.realtor.com/realestateandhomes-det...  ...  http://ap.rdcpix.com/cf949a59651d6a72ea781b17c...
+4     https://www.realtor.com/realestateandhomes-det...  ...  http://ap.rdcpix.com/7cd5a53714806ecad4574c5b1...
+...                                                 ...  ...                                                ...
+1609  https://www.realtor.com/realestateandhomes-det...  ...  http://ap.rdcpix.com/fb29edb46f4bc66086e4afe90...
+1610  https://www.realtor.com/realestateandhomes-det...  ...  http://ap.rdcpix.com/bbc0298c2d8d38e7db6c630b5...
+1611  https://www.realtor.com/realestateandhomes-det...  ...  http://ap.rdcpix.com/b7ef5da3e7d6ef2968094b4a2...
+1612  https://www.realtor.com/realestateandhomes-det...  ...  http://ap.rdcpix.com/d9d4aff3a82093477fde151a7...
+1613  https://www.realtor.com/realestateandhomes-det...  ...  http://ap.rdcpix.com/bc7b038d8a65338ac9f1e9a2b...
+
+[1614 rows x 43 columns]
+[2024-05-16T06:55:43.816+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=data_pipeline, task_id=acquire_data, execution_date=20240516T065510, start_date=20240516T065514, end_date=20240516T065543
+[2024-05-16T06:55:43.961+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-05-16T06:55:44.037+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

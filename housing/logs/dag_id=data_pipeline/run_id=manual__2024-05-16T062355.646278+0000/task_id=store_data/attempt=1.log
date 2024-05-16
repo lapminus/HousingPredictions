@@ -1,0 +1,14 @@
+[2024-05-16T06:24:27.852+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_pipeline.store_data manual__2024-05-16T06:23:55.646278+00:00 [queued]>
+[2024-05-16T06:24:27.865+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_pipeline.store_data manual__2024-05-16T06:23:55.646278+00:00 [queued]>
+[2024-05-16T06:24:27.866+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-05-16T06:24:27.885+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): store_data> on 2024-05-16 06:23:55.646278+00:00
+[2024-05-16T06:24:27.893+0000] {standard_task_runner.py:60} INFO - Started process 907 to run task
+[2024-05-16T06:24:27.896+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'data_pipeline', 'store_data', 'manual__2024-05-16T06:23:55.646278+00:00', '--job-id', '33', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpibcv6ewb']
+[2024-05-16T06:24:27.898+0000] {standard_task_runner.py:88} INFO - Job 33: Subtask store_data
+[2024-05-16T06:24:27.960+0000] {task_command.py:423} INFO - Running <TaskInstance: data_pipeline.store_data manual__2024-05-16T06:23:55.646278+00:00 [running]> on host 07f30c3fd53d
+[2024-05-16T06:24:28.062+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='data_pipeline' AIRFLOW_CTX_TASK_ID='store_data' AIRFLOW_CTX_EXECUTION_DATE='2024-05-16T06:23:55.646278+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-16T06:23:55.646278+00:00'
+[2024-05-16T06:24:28.852+0000] {logging_mixin.py:188} INFO - Data stored in /opt/***/data/cleaned_properties.csv
+[2024-05-16T06:24:28.854+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-05-16T06:24:28.866+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=data_pipeline, task_id=store_data, execution_date=20240516T062355, start_date=20240516T062427, end_date=20240516T062428
+[2024-05-16T06:24:28.916+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-05-16T06:24:28.956+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

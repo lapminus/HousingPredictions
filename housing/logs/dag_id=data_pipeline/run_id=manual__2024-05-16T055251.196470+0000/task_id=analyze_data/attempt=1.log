@@ -1,0 +1,48 @@
+[2024-05-16T05:53:23.127+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_pipeline.analyze_data manual__2024-05-16T05:52:51.196470+00:00 [queued]>
+[2024-05-16T05:53:23.137+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_pipeline.analyze_data manual__2024-05-16T05:52:51.196470+00:00 [queued]>
+[2024-05-16T05:53:23.138+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-05-16T05:53:23.158+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): analyze_data> on 2024-05-16 05:52:51.196470+00:00
+[2024-05-16T05:53:23.165+0000] {standard_task_runner.py:60} INFO - Started process 292 to run task
+[2024-05-16T05:53:23.169+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'data_pipeline', 'analyze_data', 'manual__2024-05-16T05:52:51.196470+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpt35sduwn']
+[2024-05-16T05:53:23.171+0000] {standard_task_runner.py:88} INFO - Job 30: Subtask analyze_data
+[2024-05-16T05:53:23.230+0000] {task_command.py:423} INFO - Running <TaskInstance: data_pipeline.analyze_data manual__2024-05-16T05:52:51.196470+00:00 [running]> on host 07f30c3fd53d
+[2024-05-16T05:53:23.323+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='data_pipeline' AIRFLOW_CTX_TASK_ID='analyze_data' AIRFLOW_CTX_EXECUTION_DATE='2024-05-16T05:52:51.196470+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-16T05:52:51.196470+00:00'
+[2024-05-16T05:53:23.475+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3791, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 152, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 181, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7080, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'price'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/airflow/dags/pipeline.py", line 66, in analyze_data
+    average_price = cleaned_properties['price'].mean()
+  File "/home/airflow/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 3893, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/airflow/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3798, in get_loc
+    raise KeyError(key) from err
+KeyError: 'price'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/pipeline.py", line 80, in analyze_data
+    print("Error in analyze_data:", exc_info=True)
+TypeError: 'exc_info' is an invalid keyword argument for print()
+[2024-05-16T05:53:23.496+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=data_pipeline, task_id=analyze_data, execution_date=20240516T055251, start_date=20240516T055323, end_date=20240516T055323
+[2024-05-16T05:53:23.514+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 30 for task analyze_data ('exc_info' is an invalid keyword argument for print(); 292)
+[2024-05-16T05:53:23.545+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-05-16T05:53:23.570+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

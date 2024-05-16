@@ -1,0 +1,29 @@
+[2024-05-16T06:56:08.001+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_pipeline.analyze_data manual__2024-05-16T06:55:27.240939+00:00 [queued]>
+[2024-05-16T06:56:08.014+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_pipeline.analyze_data manual__2024-05-16T06:55:27.240939+00:00 [queued]>
+[2024-05-16T06:56:08.015+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-05-16T06:56:08.036+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): analyze_data> on 2024-05-16 06:55:27.240939+00:00
+[2024-05-16T06:56:08.047+0000] {standard_task_runner.py:60} INFO - Started process 630 to run task
+[2024-05-16T06:56:08.050+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'data_pipeline', 'analyze_data', 'manual__2024-05-16T06:55:27.240939+00:00', '--job-id', '54', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpfhyxfhvs']
+[2024-05-16T06:56:08.052+0000] {standard_task_runner.py:88} INFO - Job 54: Subtask analyze_data
+[2024-05-16T06:56:08.113+0000] {task_command.py:423} INFO - Running <TaskInstance: data_pipeline.analyze_data manual__2024-05-16T06:55:27.240939+00:00 [running]> on host 7f10f1c98368
+[2024-05-16T06:56:08.205+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='data_pipeline' AIRFLOW_CTX_TASK_ID='analyze_data' AIRFLOW_CTX_EXECUTION_DATE='2024-05-16T06:55:27.240939+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-16T06:55:27.240939+00:00'
+[2024-05-16T06:56:08.482+0000] {logging_mixin.py:188} INFO - Summary Statistics:
+count    1.565000e+03
+mean     1.523081e+06
+std      1.919986e+06
+min      5.500000e+04
+25%      7.400000e+05
+50%      1.055000e+06
+75%      1.620000e+06
+max      2.400000e+07
+Name: sold_price, dtype: float64
+[2024-05-16T06:56:08.483+0000] {logging_mixin.py:188} INFO - Min Price: 55000
+[2024-05-16T06:56:08.484+0000] {logging_mixin.py:188} INFO - Max Price: 24000000
+[2024-05-16T06:56:08.485+0000] {logging_mixin.py:188} INFO - Median Price: 1055000.0
+[2024-05-16T06:56:08.486+0000] {logging_mixin.py:188} INFO - Mean Price: 1523081.2102236422
+[2024-05-16T06:56:08.487+0000] {logging_mixin.py:188} INFO - Standard Deviation: 1919985.6518155632
+[2024-05-16T06:56:09.738+0000] {logging_mixin.py:188} INFO - Root Mean Squared Error (RMSE): 316946.0378800519
+[2024-05-16T06:56:09.759+0000] {python.py:202} INFO - Done. Returned value was: {'RMSE': 316946.0378800519, 'model_name': 'RandomForestRegressor', 'model_params': {'n_estimators': 100, 'random_state': 42}}
+[2024-05-16T06:56:09.786+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=data_pipeline, task_id=analyze_data, execution_date=20240516T065527, start_date=20240516T065608, end_date=20240516T065609
+[2024-05-16T06:56:09.835+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-05-16T06:56:09.855+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
